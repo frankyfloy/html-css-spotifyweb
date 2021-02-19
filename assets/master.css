@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    background-color: grey;
+}
+
+
+
+
+/* GRANDEZZE CONTENITORI ELEMENTI PRINCIPALI-
+    -Header(Nav-main), Main , Footer;
+*/
+header, footer{
+    position: fixed;
+    height: 70px;
+    width: 100vw;
+    min-height: 70px;
+    max-height: 70px;
+    min-width: 100vw;
+    max-width: 100vh;
+
+}
+
+main{
+    padding-left: 50px;
+}
+
+
+#Nav-main{
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    height: calc(100vh - 70px);
+}
+
+
+
+
+/* CONTAINER FIXED */
+.navbar,#Nav-main,footer{
+    position: fixed;
+}
+
+header{
+    z-index: 2;
+    top:0;
+    left: 0;
+}
+
+#Nav-main{
+    z-index: 3;
+    top:0;
+    left: 0;
+}
+
+
+footer{
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+}
+
+/* BG CONTAINER FIXED */
+header{
+    background-color: #141922;
+}
+
+#Nav-main{
+    background-color: #141922;
+}
+
+
+
+footer{
+    background-color: red;
+}
+
+
+
+
+/* **************** HEADER **************** */
+
+
+
+/* **************** MAIN **************** */
+/* DEBUG:  */
+main{
+    background-color: green;
+}

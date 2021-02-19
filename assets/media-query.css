@@ -1,0 +1,17 @@
+@media all and (min-width: 768px) {
+
+
+    body > main {
+        width: 100vw;
+        height: 100vh;
+        padding-left: 200px;
+        background-color: green;
+    }
+
+    body > #Nav-main{
+        width: 20vw;
+        min-width: 200px;
+        max-width: 200px;
+    }
+
+}
