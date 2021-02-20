@@ -5,11 +5,10 @@
         width: 100vw;
         height: 100vh;
         padding-left: 200px;
-        background-color: green;
     }
 
     body > #Nav-main{
-        width: 20vw;
+        width: 200px;
         min-width: 200px;
         max-width: 200px;
     }

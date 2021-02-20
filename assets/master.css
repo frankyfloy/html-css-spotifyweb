@@ -1,36 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-}
-
-body{
-    position: relative;
-    background-color: grey;
-}
-
-
-
 
 /* GRANDEZZE CONTENITORI ELEMENTI PRINCIPALI-
-    -Header(Nav-main), Main , Footer;
+    .navbar, Nav-main, Footer;
 */
-header, footer{
+.navbar, footer{
     position: fixed;
     height: 70px;
-    width: 100vw;
     min-height: 70px;
     max-height: 70px;
+    width: 100vw;
     min-width: 100vw;
-    max-width: 100vh;
+    max-width: 100vw;
 
 }
 
 main{
     padding-left: 50px;
+    padding-top: 70px;
+    background-color: #272a2b;
 }
-
 
 #Nav-main{
     width: 50px;
@@ -40,25 +27,24 @@ main{
 }
 
 
-
-
 /* CONTAINER FIXED */
 .navbar,#Nav-main,footer{
     position: fixed;
 }
 
-header{
-    z-index: 2;
+.navbar,#Nav-main{
     top:0;
     left: 0;
+}
+
+
+.navbar{
+    z-index: 2;
 }
 
 #Nav-main{
     z-index: 3;
-    top:0;
-    left: 0;
 }
-
 
 footer{
     z-index: 4;
@@ -66,8 +52,10 @@ footer{
     left: 0;
 }
 
+
+
 /* BG CONTAINER FIXED */
-header{
+.navbar{
     background-color: #141922;
 }
 
@@ -75,21 +63,50 @@ header{
     background-color: #141922;
 }
 
-
-
 footer{
-    background-color: red;
+    background-color: #282828;
 }
+
+/* BG-MAIN */
+main{
+    background-color: #272a2b;
+}
+
 
 
 
 
 /* **************** HEADER **************** */
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.my-btn-nav{
+    border-radius: 1.25rem;
+    color: #f8f9fa;
+    background-color: inherit;
+    border-color: #f8f9fa;
+}
 
 
 
 /* **************** MAIN **************** */
-/* DEBUG:  */
-main{
-    background-color: green;
+
+
+
+
+
+/* DEBUG PROVE */
+.text-color{
+    color: white;
+};
+
+.display-flex{
+    display: flex;
 }
+
+/* .flex-end{
+    justify-content: flex-end;
+} */
