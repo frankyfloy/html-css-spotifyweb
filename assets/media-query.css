@@ -1,16 +1,23 @@
+@media all and (max-width: 768px) {
+    .box {
+      width: 50px;
+      min-width: 50px;
+      max-width: 50px;
+    }
+}
+
+
+
 @media all and (min-width: 768px) {
-
-
-    body > main {
-        width: 100vw;
-        height: 100vh;
-        padding-left: 200px;
+    body #sidebar.box {
+      resize: horizontal;
+      width: 300px;
+      min-width: 100px;
+      max-width: 400px;
     }
 
-    body > #Nav-main{
-        width: 200px;
-        min-width: 200px;
-        max-width: 200px;
+    .invisible#Text-logo {
+        visibility: visible;
     }
 
 }

@@ -1,112 +1,200 @@
+html{
+    min-width: 265px;
+    min-height: 220px;
+}
 
-/* GRANDEZZE CONTENITORI ELEMENTI PRINCIPALI-
-    .navbar, Nav-main, Footer;
-*/
-.navbar, footer{
+body{
+    overflow: hidden;
+}
+
+
+#sidebar{
+    min-height: calc(100vh - 70px);
+    max-height: calc(100vh - 70px);
+    /* position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0; */
+}
+
+/* BOX ASIDE AND MAIN */
+
+.box {
+  width: 50PX;
+  border-right: thin solid rgba(255,255 ,255,0.5);
+  /* min-width: 50px; */
+  /* max-width: 50px; */
+
+}
+
+.box1 {
+  flex-basis: calc(100% - 50px);
+}
+
+#Playlist, .box{
+    overflow-x: hidden;
+    overflow-y:  auto;
+}
+
+/* #sidebar{
+    overflow-x: hidden;
+    overflow-y:  hidden;
+} */
+
+
+
+/* display none text logo */
+/* #Text-logo{
+    visibility: visible;
+} */
+
+
+/* Scroll main */
+.scroll{
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.scroll::-webkit-scrollbar{
+	-webkit-overflow-scrolling: auto;
+	width: 6px;
+}
+.scroll::-webkit-scrollbar-thumb{
+	border-radius: 4px;
+    background-color: rgba(0,0,0,1);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+
+/* scroll sidebar */
+#Playlist::-webkit-scrollbar{
+	-webkit-overflow-scrolling: auto;
+	width: 3px;
+}
+
+#Playlist::-webkit-scrollbar{
+	border-radius: 4px;
+    background-color: rgba(0,0,0,1);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+
+
+
+
+
+footer{
     position: fixed;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
     height: 70px;
     min-height: 70px;
     max-height: 70px;
     width: 100vw;
-    min-width: 100vw;
-    max-width: 100vw;
-
 }
 
 main{
-    padding-left: 50px;
-    padding-top: 70px;
-    background-color: #272a2b;
-}
-
-#Nav-main{
-    width: 50px;
-    min-width: 50px;
-    max-width: 50px;
+    margin-bottom: calc(100vh - 70px);
     height: calc(100vh - 70px);
+    width: 100%;
 }
 
 
-/* CONTAINER FIXED */
-.navbar,#Nav-main,footer{
+/* text-logo */
+
+
+
+
+#NavMain-Fx-Top{
+    /* width: 100%; */
+
+}
+
+
+
+/* daiiiiiiii!!! fixed o no */
+.pos-relative{
+    position: relative;
+}
+
+/* Contenitore-fluid della #NavMain-Fx-Top */
+#Container_NavMain-Fx-Top{
+    position: absolute;
+
+    /* position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0; */
+
+}
+
+.NavMain-Fx-Top{
     position: fixed;
 }
 
-.navbar,#Nav-main{
-    top:0;
-    left: 0;
+
+
+
+
+
+
+/* Proveeeeee Scroll */
+
+
+
+
+
+#Card-Tracks{
+    padding-top: 70px;
 }
 
 
-.navbar{
-    z-index: 2;
-}
-
-#Nav-main{
-    z-index: 3;
-}
-
-footer{
-    z-index: 4;
-    bottom: 0;
-    left: 0;
+.m-top-70px{
+    margin-top: 70px;
 }
 
 
+/* .pos-absolute{
+    position: absolute;
+} */
 
-/* BG CONTAINER FIXED */
-.navbar{
-    background-color: #141922;
+
+/* BG-COLOR */
+.bg-black{
+
 }
 
-#Nav-main{
-    background-color: #141922;
-}
-
-footer{
+.bg-footer{
     background-color: #282828;
 }
 
-/* BG-MAIN */
-main{
-    background-color: #272a2b;
+.bg-black{
+    background-color: #000000;
 }
 
-
-
-
-
-/* **************** HEADER **************** */
-.navbar{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
+/* Button Nav */
 .my-btn-nav{
     border-radius: 1.25rem;
-    color: #f8f9fa;
-    background-color: inherit;
-    border-color: #f8f9fa;
+    /* color: #f8f9fa; */
+    background-color: #000000;
+    /* border-color: #f8f9fa; */
+}
+
+
+main{
+    background-color: #000000;
+    background-image: linear-gradient(0deg, #000000 0%, #414141 150%);
+    /* background: linear-gradient(0deg,black 80%, grey); */
+    /* background: -webkit-linear-gradient(300deg, grey , black 80%); /* Safari 5.1 to 6.0 */ */
+    /* background: linear-gradient(, black 80%, grey); */
+    /* background: linear-gradient(5deg,grey, black  40%, grey  60%, black  80%, grey 80%); */
+    /* linear-gradient(45deg, bg-dark, #fff); */
 }
 
 
 
-/* **************** MAIN **************** */
-
-
-
-
-
-/* DEBUG PROVE */
-.text-color{
+/* Icon Logo Spotify */
+.fa-spotify{
     color: white;
-};
-
-.display-flex{
-    display: flex;
+    font-weight: 400;
 }
-
-/* .flex-end{
-    justify-content: flex-end;
-} */
