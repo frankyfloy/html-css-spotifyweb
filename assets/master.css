@@ -1,30 +1,34 @@
-html{
-    min-width: 265px;
-    min-height: 220px;
-}
-
 body{
     overflow: hidden;
 }
 
-
-#sidebar{
-    min-height: calc(100vh - 70px);
-    max-height: calc(100vh - 70px);
-    /* position: fixed;
-    z-index: 4;
-    top: 0;
-    left: 0; */
+main,#sidebar{
+    height: calc(100vh - 70px);
 }
 
+main{
+    margin-bottom: calc(100vh - 70px);
+    /* Background */
+    background-color: #000000;
+    background-image: linear-gradient(0deg, #000000 0%, #414141 150%);
+}
+
+footer{
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    min-height: 70px;
+    max-height: 70px;
+    width: 100vw;
+}
+
+
 /* BOX ASIDE AND MAIN */
-
 .box {
-  width: 50PX;
+  width: 50px;
   border-right: thin solid rgba(255,255 ,255,0.5);
-  /* min-width: 50px; */
-  /* max-width: 50px; */
-
 }
 
 .box1 {
@@ -35,18 +39,6 @@ body{
     overflow-x: hidden;
     overflow-y:  auto;
 }
-
-/* #sidebar{
-    overflow-x: hidden;
-    overflow-y:  hidden;
-} */
-
-
-
-/* display none text logo */
-/* #Text-logo{
-    visibility: visible;
-} */
 
 
 /* Scroll main */
@@ -64,7 +56,7 @@ body{
     box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
-
+/* TODO: Metti in ordine questa sezione  */
 /* scroll sidebar */
 #Playlist::-webkit-scrollbar{
 	-webkit-overflow-scrolling: auto;
@@ -77,91 +69,9 @@ body{
     box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
-
-
-
-
-
-footer{
-    position: fixed;
-    z-index: 5;
-    bottom: 0;
-    left: 0;
-    height: 70px;
-    min-height: 70px;
-    max-height: 70px;
-    width: 100vw;
-}
-
-main{
-    margin-bottom: calc(100vh - 70px);
-    height: calc(100vh - 70px);
-    width: 100%;
-}
-
-
-/* text-logo */
-
-
-
-
-#NavMain-Fx-Top{
-    /* width: 100%; */
-
-}
-
-
-
-/* daiiiiiiii!!! fixed o no */
-.pos-relative{
-    position: relative;
-}
-
-/* Contenitore-fluid della #NavMain-Fx-Top */
-#Container_NavMain-Fx-Top{
-    position: absolute;
-
-    /* position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0; */
-
-}
-
-.NavMain-Fx-Top{
-    position: fixed;
-}
-
-
-
-
-
-
-
-/* Proveeeeee Scroll */
-
-
-
-
-
-#Card-Tracks{
-    padding-top: 70px;
-}
-
-
-.m-top-70px{
-    margin-top: 70px;
-}
-
-
-/* .pos-absolute{
-    position: absolute;
-} */
-
-
 /* BG-COLOR */
 .bg-black{
-
+    color: BLACK;
 }
 
 .bg-footer{
@@ -180,21 +90,17 @@ main{
     /* border-color: #f8f9fa; */
 }
 
-
-main{
-    background-color: #000000;
-    background-image: linear-gradient(0deg, #000000 0%, #414141 150%);
-    /* background: linear-gradient(0deg,black 80%, grey); */
-    /* background: -webkit-linear-gradient(300deg, grey , black 80%); /* Safari 5.1 to 6.0 */ */
-    /* background: linear-gradient(, black 80%, grey); */
-    /* background: linear-gradient(5deg,grey, black  40%, grey  60%, black  80%, grey 80%); */
-    /* linear-gradient(45deg, bg-dark, #fff); */
-}
-
-
-
 /* Icon Logo Spotify */
 .fa-spotify{
     color: white;
     font-weight: 400;
+}
+
+.m-top-70px{
+    margin-top: 70px;
+}
+
+/* utility */
+.pos-relative{
+    position: relative;
 }
