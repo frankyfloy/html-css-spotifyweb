@@ -29,6 +29,7 @@ footer{
 #sidebar {
   width: 50px;
   border-right: thin solid rgba(255,255 ,255,0.5);
+  /* flex-basis: 50px; */
 }
 
 main {
@@ -39,10 +40,7 @@ main {
 
 
 
-#Playlist, #sidebar {
-    overflow-x: hidden;
-    overflow-y:  auto;
-}
+
 
 
 /* Scroll main */
@@ -144,4 +142,16 @@ main {
 /* utility */
 .pos-relative{
     position: relative;
+}
+
+
+.p-left-8px{
+    padding-left: 8px;
+}
+
+
+
+/* Button Sidebar */
+#sidebar button{
+    border: none;
 }

@@ -1,3 +1,17 @@
+@media all and (max-width: 350px) {
+    .div-btn-next-or-back{
+        display: none;
+    }
+
+    .navbar-expand-lg{
+        justify-content: center;
+    }
+
+
+}
+
+
+
 @media all and (max-width: 768px) {
     #sidebar {
       width: 50px;
@@ -14,5 +28,10 @@
       width: 300px;
       min-width: 100px;
       max-width: 400px;
+    }
+
+    #Playlist, #sidebar {
+        overflow-x: auto;
+        overflow-y:  auto;
     }
 }
