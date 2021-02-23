@@ -25,17 +25,21 @@ footer{
 }
 
 
-/* BOX ASIDE AND MAIN */
-.box {
+/* BOX SIDEBAR AND MAIN */
+#sidebar {
   width: 50px;
   border-right: thin solid rgba(255,255 ,255,0.5);
 }
 
-.box1 {
+main {
   flex-basis: calc(100% - 50px);
 }
+/* ------------------------------- */
 
-#Playlist, .box{
+
+
+
+#Playlist, #sidebar {
     overflow-x: hidden;
     overflow-y:  auto;
 }
@@ -69,6 +73,19 @@ footer{
     box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
+
+/* BG-Aimation Container_NavMain-Fx-Top */
+
+
+
+
+/* Nav-Main-Fx-Top */
+.div-btn-next-or-back{
+    justify-content: flex-start;
+}
+
+
+
 /* BG-COLOR */
 .bg-black{
     color: BLACK;
@@ -82,6 +99,14 @@ footer{
     background-color: #000000;
 }
 
+/* text-color */
+
+.text-black{
+    color: black;
+}
+
+
+
 /* Button Nav */
 .my-btn-nav{
     border-radius: 1.25rem;
@@ -90,11 +115,27 @@ footer{
     /* border-color: #f8f9fa; */
 }
 
+
+/* icon */
 /* Icon Logo Spotify */
 .fa-spotify{
     color: white;
     font-weight: 400;
 }
+
+[class^="fa-arrow-"]{
+    color: white;
+    background-color: black;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
 
 .m-top-70px{
     margin-top: 70px;
