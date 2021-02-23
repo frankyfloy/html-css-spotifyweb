@@ -28,6 +28,7 @@
       width: 300px;
       min-width: 100px;
       max-width: 400px;
+      padding-left: 10px;
     }
 
     #Playlist, #sidebar {
@@ -37,5 +38,22 @@
 
     #Btn-Logo-SideBar > .fa.fa-spotify{
         font-size: 50px;
+    }
+
+    #Text-logo.invisible {
+        visibility: visible!important;
+    }
+
+    .logo-Sidebar{
+        height: 50px;
+        width: 100%;
+        max-width: 120px;
+        color: white;
+        display: inline-block!important;
+        visibility: visible!important;
+    }
+
+    #Btn-Logo-SideBar{
+        display: none;
     }
 }

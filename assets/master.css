@@ -119,12 +119,7 @@ main {
 }
 
 
-/* icon */
-/* Icon Logo Spotify */
-/* .fa-spotify{
-    color: white;
-    font-weight: 400;
-} */
+
 
 [class*="fa-arrow-"]{
     color: white;
@@ -134,10 +129,6 @@ main {
 .div-btn-next-or-back > button:hover > [class*="fa-arrow-"]{
     color: black;
 }
-
-
-
-
 
 
 

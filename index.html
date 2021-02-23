@@ -22,53 +22,61 @@
 
     <body class="d-flex">
 
-        <sidebar id="sidebar" class="bg-black container-fluid">
-            <section id="Nav-menu" class="row">
-                <div class="col-12 p-0">
-                    <button id="Btn-Logo-SideBar" type="button" class="btn text-light pt-3 pb-3"><i class="fa fa-spotify"></i></button>
-                    <div class="d-inline">
-                        <!-- <a class="navbar-brand text-light" href="#"><i class="fa fa-spotify fa-2x"></i></a> -->
-                        <!-- <span id="Text-logo" class="d-inline invisible text-light">SPOTIFY</span> -->
+        <sidebar id="sidebar" class="bg-black">
+
+            <div class="bg-black container-fluid">
+                <section id="Nav-menu" class="row">
+
+                    <div class="col-12 p-0">
+                        <div class="col-12 pt-3 pb-3">
+                            <!-- LOGO LARGE DEVICE -->
+                            <img class="logo-Sidebar d-none invisible" src="assets/img/spotify-seeklogo.com.svg" alt="">
+
+                            <!-- LOGO SMALL DEVICE -->
+                            <button id="Btn-Logo-SideBar" type="button" class="btn text-light p-0"><i class="fa fa-spotify"></i></button>
+                        </div>
+
+                        <!-- TODO: Sei qui ore 12 -->
+                        <ul class="nav flex-column">
+                          <li class="nav-item">
+                              <button type="button" class="btn btn-outline-light">Light</button>
+                          </li>
+                          <li class="nav-item">
+                            <button type="button" class="btn btn-outline-light">Light</button>
+                          </li>
+                          <li class="nav-item">
+                            <button type="button" class="btn btn-outline-light">Light</button>
+                          </li>
+                        </ul>
                     </div>
-                    <ul class="nav flex-column">
-                      <li class="nav-item">
-                          <button type="button" class="btn btn-outline-light">Light</button>
-                      </li>
-                      <li class="nav-item">
-                        <button type="button" class="btn btn-outline-light">Light</button>
-                      </li>
-                      <li class="nav-item">
-                        <button type="button" class="btn btn-outline-light">Light</button>
-                      </li>
+
+                </section>
+                <hr>
+                <section id="Nav-Playlist" class="row">
+
+
+                    <ul id="Playlist" class="nav flex-column">
+
+                        <div class="d-inline pl-2">
+                            <span class="sr-only">Your Playlist</span>
+                            <label class="text-light mb-0" for=""><h6>Playlist</h6></label>
+                        </div>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
                     </ul>
-                </div>
-
-            </section>
-            <hr>
-            <section id="Nav-Playlist" class="row">
-
-
-                <ul id="Playlist" class="nav flex-column">
-
-                    <div class="d-inline pl-2">
-                        <span class="sr-only">Your Playlist</span>
-                        <label class="text-light mb-0" for=""><h6>Playlist</h6></label>
-                    </div>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
-            </section>
+                </section>
+            </div>
         </sidebar>
 
         <main class="scroll">
