@@ -113,20 +113,27 @@ main {
     /* border-color: #f8f9fa; */
 }
 
+/* Button Logo Sidebar */
+.fa.fa-spotify{
+    font-size: 30px;
+}
+
 
 /* icon */
 /* Icon Logo Spotify */
-.fa-spotify{
+/* .fa-spotify{
     color: white;
     font-weight: 400;
-}
+} */
 
-[class^="fa-arrow-"]{
+[class*="fa-arrow-"]{
     color: white;
-    background-color: black;
-    font-weight: 400;
 }
 
+
+.div-btn-next-or-back > button:hover > [class*="fa-arrow-"]{
+    color: black;
+}
 
 
 
