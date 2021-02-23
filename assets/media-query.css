@@ -7,9 +7,7 @@
         justify-content: center;
     }
 
-
 }
-
 
 
 @media all and (max-width: 768px) {
@@ -19,12 +17,15 @@
       max-width: 50px;
     }
 
-    #Nav-menu{
+    #Nav-menu,#Nav-Playlist{
         justify-content: center;
     }
 
-
+    #Container-Logo-Up-768px{
+        display: none!important;
+    }
 }
+
 
 
 
@@ -42,62 +43,20 @@
     }
 
 
-    #Btn-Logo-SideBar > .fa.fa-spotify{
-        font-size: 50px;
-    }
-
-    #Text-logo.invisible {
-        visibility: visible!important;
-    }
-
-    #Container-Logo-Up-768px{
-        visibility: visible!important;
+    /* Cambio logo screen sm -> md ... */
+    #Container-Logo-Down-768px{
+        display: none!important;
     }
 
 
-
-
-
-    .logo-Sidebar{
-        /* height: 50px;
-        width: 100%;
-        max-width: 150px; */
-
+    /* Centramento liste */
+    #Nav-menu,#Nav-Playlist{
+        margin: 0 auto;
     }
 
-    #Btn-Logo-SideBar{
-        display: none;
+    #Nav-menu > .flex-column >li.d-flex:first-child img:first-child {
+        width: 200px;
+        max-width: 100%;
     }
-
-    #Container-Loghi{
-        padding-right: 10px;
-        padding-left: 3;
-    }
-
-    #Nav-menu{
-        justify-content: flex-start;
-    }
-
-
-    #Nav-menu > .flex-column >li.d-flex{
-        width: 100%;
-        justify-content: center;
-    }
-
-    #Nav-menu > .flex-column >li.d-flex > #Logo-Spotify-Big{
-        height: 100%;
-        width: 100%;
-    }
-
-    #Nav-menu > .flex-column >li.d-flex:first-child {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    #Nav-menu > .flex-column >li.d-flex  img{
-        width: 40px;
-        max-width: 30px;
-    }
-
 
 }
