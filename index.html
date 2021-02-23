@@ -18,40 +18,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <title><s>Spotify Home</s></title>
-  </head>
+</head>
 
     <body class="d-flex">
 
-        <sidebar id="sidebar" class="bg-black">
+        <sidebar id="sidebar" class="container-fluid bg-black">
 
-            <div class="bg-black container-fluid">
-                <section id="Nav-menu" class="row">
 
-                    <div class="col-12 p-0">
-                        <div class="col-12 pt-3 pb-3">
-                            <!-- LOGO LARGE DEVICE -->
-                            <img class="logo-Sidebar d-none invisible" src="assets/img/spotify-seeklogo.com.svg" alt="">
+                <section id="Nav-menu" class="row d-flex">
 
-                            <!-- LOGO SMALL DEVICE -->
-                            <button id="Btn-Logo-SideBar" type="button" class="btn text-light p-0"><i class="fa fa-spotify"></i></button>
-                        </div>
-
-                        <!-- TODO: Sei qui ore 12 -->
                         <ul class="nav flex-column">
-                          <li class="nav-item">
-                              <button type="button" class="btn btn-outline-light">Light</button>
+
+                            <li id="Container-Logo-Up-768px"class="d-flex logo-Sidebar d-none pb-3">
+
+                                <!-- LOGO LARGE DEVICE -->
+                                <img id="Logo-Spotify-Big" src="assets/icon/spotify-seeklogo.com.svg" alt="">
+                            </li>
+
+
+                            <li id="Container-Logo-Down-768px" class="d-flex logo-Sidebar d-none invisble pb-3">
+                                <!-- LOGO SMALL DEVICE -->
+                                <button type="button" class="btn btn-outline-light"><img src="assets\icon\spotify-icons.svg" alt=""></button>
+                            </li>
+
+                          <li class="d-flex">
+
+                              <button type="button" class="btn btn-outline-light"><img src="assets/icon/icons-home.svg" alt=""></button>
                           </li>
-                          <li class="nav-item">
-                            <button type="button" class="btn btn-outline-light">Light</button>
+                          <li class="d-flex">
+                            <button type="button" class="btn btn-outline-light"><img src="assets/icon/icons-home.svg" alt=""></button>
                           </li>
-                          <li class="nav-item">
-                            <button type="button" class="btn btn-outline-light">Light</button>
+                          <li class="d-flex">
+                            <button type="button" class="btn btn-outline-light"><img src="assets/icon/icons-home.svg" alt=""></button>
                           </li>
                         </ul>
-                    </div>
-
                 </section>
+
                 <hr>
+
                 <section id="Nav-Playlist" class="row">
 
 
@@ -76,7 +80,7 @@
                         </li>
                     </ul>
                 </section>
-            </div>
+
         </sidebar>
 
         <main class="scroll">

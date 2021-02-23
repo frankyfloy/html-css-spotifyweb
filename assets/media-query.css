@@ -18,6 +18,12 @@
       min-width: 50px;
       max-width: 50px;
     }
+
+    #Nav-menu{
+        justify-content: center;
+    }
+
+
 }
 
 
@@ -25,16 +31,16 @@
 @media all and (min-width: 768px) {
     body #sidebar {
       resize: horizontal;
-      width: 300px;
+      width: 400px;
       min-width: 100px;
       max-width: 400px;
-      padding-left: 10px;
     }
 
     #Playlist, #sidebar {
         overflow-x: auto;
         overflow-y:  auto;
     }
+
 
     #Btn-Logo-SideBar > .fa.fa-spotify{
         font-size: 50px;
@@ -44,16 +50,54 @@
         visibility: visible!important;
     }
 
-    .logo-Sidebar{
-        height: 50px;
-        width: 100%;
-        max-width: 120px;
-        color: white;
-        display: inline-block!important;
+    #Container-Logo-Up-768px{
         visibility: visible!important;
+    }
+
+
+
+
+
+    .logo-Sidebar{
+        /* height: 50px;
+        width: 100%;
+        max-width: 150px; */
+
     }
 
     #Btn-Logo-SideBar{
         display: none;
     }
+
+    #Container-Loghi{
+        padding-right: 10px;
+        padding-left: 3;
+    }
+
+    #Nav-menu{
+        justify-content: flex-start;
+    }
+
+
+    #Nav-menu > .flex-column >li.d-flex{
+        width: 100%;
+        justify-content: center;
+    }
+
+    #Nav-menu > .flex-column >li.d-flex > #Logo-Spotify-Big{
+        height: 100%;
+        width: 100%;
+    }
+
+    #Nav-menu > .flex-column >li.d-flex:first-child {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #Nav-menu > .flex-column >li.d-flex  img{
+        width: 40px;
+        max-width: 30px;
+    }
+
+
 }
