@@ -1,4 +1,4 @@
-@media all and (max-width: 470px) {
+@media all and (max-width: 570px) {
     .div-btn-next-or-back{
         display: none;
     }
@@ -7,9 +7,23 @@
         justify-content: center;
     }
 
+    .Add-To-Favourites{
+        visibility: hidden;
+    }
+
+    footer #Song-in-progress .card{
+        border: none;
+    }
+
+    .card{
+        border: none;
+    }
+
 }
 
 @media (min-width: 576px){
+
+
     .card-group {
         display: -ms-flexbox;
         display: flex;
