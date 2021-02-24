@@ -36,9 +36,12 @@ footer{
 }
 
 main {
-  flex-basis: calc(100% - 50px);
+  /* flex-basis: calc(100% - 50px); */
+  flex: 1 1 calc(100% - 50px);
 }
 /* ------------------------------- */
+
+
 
 
 
@@ -125,35 +128,63 @@ main > [id^="Row-"]{
 	flex-direction: column wrap;
 	-webkit-flex-direction: column wrap;
     align-items: stretch;
-	-webkit-flex: 1 1 50%;
     margin-bottom: 20px;
     padding: 10px;
-    min-width: 180px;
-    max-width: 270px;
+    margin-right: 10px;
+    flex: 0 0 250px;
+
+
 }
 
 
 .card-group{
-    height: 300px;
     display: flex;
 	display: -webkit-flex;
-	flex-flow: row wrap;
-	-webkit-flex-flow: row wrap;
-	align-items: stretch;
-	-webkit-align-items: stretch;
-	justify-content: space-around;
-	-webkit-justify-content: space-around;
+
+    /* TODO: Cambiare per lo scrolling orizzontale */
+        flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
+        /* overflow-x: auto;
+        overflow-y: hidden; */
+    /* -----------------------------------------  */
+
+    /*  TODO: Tienilo in considerazione per lo scrool verticale
+    togliendo il margin alle card (space-between)
+    ----------------------------------------
+    justify-content: space-between;
+	-webkit-justify-content: space-between;
+    ----------------------------------------
+    */
 	margin-top: 10px;
     padding: 0 20px;
-
-    overflow-x: auto;
-    overflow-y: hidden;
 }
 
 
 
 
-/* Scroll main */
+/* ********************* SCROLL *****************************/
+/* Scroll CARD GROUP */
+/* TODO: Uso didattico scrolling orizzontale card */
+/* .card-group{
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+.card-group::-webkit-scrollbar{
+	-webkit-overflow-scrolling: auto;
+	width: 1px;
+    height: 5px;
+}
+.card-group::-webkit-scrollbar-thumb{
+    padding: 20px;
+	border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 3  3px rgba(0,0,0,.5);
+} */
+
+
+
+
+/* Scroll Vertical Main */
 .scroll{
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -169,6 +200,8 @@ main > [id^="Row-"]{
 }
 
 
+
+/* -------Utility---------- */
 
 /* BG-COLOR */
 .bg-black{
@@ -197,22 +230,6 @@ main > [id^="Row-"]{
     border-radius: 1.25rem;
     background-color: transparent;
 }
-
-
-
-
-/* BUTTON GENERAL PROPERTY */
-/* button:hover{
-
-
-} */
-
-/* img:hover{
-    transition: scale 2;
-} */
-
-/* .grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); } */
 
 .btn{
     color: #ggg;
