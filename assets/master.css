@@ -109,13 +109,7 @@ DI SIDEBAR.
 /* SECTION ALBUM */
 
 main > [id^="Row-"] > .col-12 > h5{
-    margin-left: 20px;
-
-}
-
-main > [id^="Row-"]{
-    margin-bottom: 30px;
-
+    text-align: center;
 }
 
 /* MAIN SECTION THUMNAILS */
@@ -130,10 +124,8 @@ main > [id^="Row-"]{
     align-items: stretch;
     margin-bottom: 20px;
     padding: 10px;
-    margin-right: 10px;
     flex: 0 0 250px;
-
-
+    padding: 10px 20px;
 }
 
 
@@ -156,7 +148,6 @@ main > [id^="Row-"]{
     ----------------------------------------
     */
 	margin-top: 10px;
-    padding: 0 20px;
 }
 
 
