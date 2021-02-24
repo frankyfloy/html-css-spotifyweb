@@ -106,9 +106,9 @@
         margin-left: 20px;
     }
 
-    body main > [id^="Row-"] > .col-12 > h5{
+    body main > [id^="Row-"] > .col-12 > *{
         text-align: left;
-        margin-left: 40px;
+        margin-left: 50px;
 
     }
 }
