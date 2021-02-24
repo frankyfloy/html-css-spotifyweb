@@ -1,4 +1,4 @@
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
     .div-btn-next-or-back{
         display: none;
     }
@@ -6,6 +6,14 @@
     .navbar-expand-lg{
         justify-content: center;
     }
+
+}
+
+@media (min-width: 576px){}
+    .card-group {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row;
 
 }
 
@@ -21,8 +29,23 @@
         justify-content: center;
     }
 
+    #Container-Logo-Down-768px{
+        margin: 5px 0;
+    }
+
+    /* LOGO XL HIDDEN */
     #Container-Logo-Up-768px{
         display: none!important;
+    }
+
+    /* LOGO SMALL WIDHT */
+    #Icon-Small-Spotify{
+        width:25px;
+    }
+
+    /* ICON SIDEBAR WIDHT*/
+    .w-20px {
+        width: 20px;
     }
 }
 
@@ -32,31 +55,31 @@
 @media all and (min-width: 768px) {
     body #sidebar {
       resize: horizontal;
-      width: 400px;
-      min-width: 100px;
-      max-width: 400px;
+      width: 250px;
+      min-width: 80px;
+      max-width: 300px;
+      overflow-x: hidden;
+      overflow-y: hidden;
     }
-
-    #Playlist, #sidebar {
-        overflow-x: auto;
-        overflow-y:  auto;
-    }
-
 
     /* Cambio logo screen sm -> md ... */
     #Container-Logo-Down-768px{
         display: none!important;
     }
 
-
-    /* Centramento liste */
-    #Nav-menu,#Nav-Playlist{
-        margin: 0 auto;
+    #Nav-menu{
+        height: 20vh;
     }
 
-    #Nav-menu > .flex-column >li.d-flex:first-child img:first-child {
+    /* LOGO SMALL WIDHT */
+    #Logo-Spotify-Big {
         width: 200px;
         max-width: 100%;
+    }
+
+    /* ICON SIDEBAR WIDHT*/
+    .w-20px {
+        width: 25px;
     }
 
 }

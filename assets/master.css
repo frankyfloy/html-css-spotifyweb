@@ -4,6 +4,7 @@ body{
 
 main,#sidebar{
     height: calc(100vh - 70px);
+    width: 100%;
 }
 
 main{
@@ -41,6 +42,9 @@ main {
 
 
 
+
+
+
 /* *************  SIDEBAR ***************/
 /* Button Sidebar */
 #sidebar button{
@@ -48,16 +52,104 @@ main {
 }
 
 
-/* Immagini sidebar */
-#Nav-menu > .flex-column >li.d-flex  img{
-    width: 30px;
-    max-width: 50px;
+/* ALTEZZA SECTION -- NAV-MENU / NAV-PLAYLIST --
+DI SIDEBAR.
+  */
+#Nav-menu{
+    height: 30vh;
+    padding: 0 15px;
+    min-height: 250px;
+    border-bottom: 1px solid #ffffff;
 }
 
-#Nav-Playlist > .flex-column >li.d-flex  img{
-    width: 30px;
-    max-width: 50px;
+
+#Nav-Playlist {
+    height: calc(70vh - 120px);
+    min-height: 100px;
 }
+
+#Nav-menu, #Nav-Playlist{
+    padding: 0 15px;
+}
+
+
+
+.Icon-Border-Circle{
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+
+}
+
+
+
+
+/* -----------------Nav-Main-Fx-Top----------------- */
+
+.navbar {
+    padding: 1.5rem 2rem;
+}
+
+/* BUTTON NEXT-BACK */
+.div-btn-next-or-back{
+    justify-content: flex-start;
+}
+
+[class*="fa-arrow-"]{
+    color: white;
+}
+
+.div-btn-next-or-back > button:hover > [class*="fa-arrow-"]{
+    color: black;
+}
+
+
+/* SECTION ALBUM */
+
+main > [id^="Row-"] > .col-12 > h5{
+    margin-left: 20px;
+
+}
+
+main > [id^="Row-"]{
+    margin-bottom: 30px;
+
+}
+
+/* MAIN SECTION THUMNAILS */
+
+.card-group > .card{
+    background-color: transparent;
+    border: 1px solid rgba(0,0,0,.125);
+    display: flex;
+	display: -webkit-flex;
+	flex-direction: column wrap;
+	-webkit-flex-direction: column wrap;
+    align-items: stretch;
+	-webkit-flex: 1 1 50%;
+    margin-bottom: 20px;
+    padding: 10px;
+    min-width: 180px;
+    max-width: 270px;
+}
+
+
+.card-group{
+    height: 300px;
+    display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	align-items: stretch;
+	-webkit-align-items: stretch;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	margin-top: 10px;
+    padding: 0 20px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
 
 
 
@@ -75,42 +167,6 @@ main {
     background-color: rgba(0,0,0,1);
     box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
-
-/* TODO: Metti in ordine questa sezione  */
-/* scroll sidebar */
-/* #Playlist::-webkit-scrollbar{
-	-webkit-overflow-scrolling: auto;
-	width: 3px;
-}
-
-#Playlist::-webkit-scrollbar{
-	border-radius: 4px;
-    background-color: rgba(0,0,0,1);
-    box-shadow: 0 0 1px rgba(255,255,255,.5);
-} */
-
-
-/* BG-Aimation Container_NavMain-Fx-Top */
-
-
-
-
-/* -----------------Nav-Main-Fx-Top----------------- */
-
-/* BUTTON NEXT-BACK */
-.div-btn-next-or-back{
-    justify-content: flex-start;
-}
-
-[class*="fa-arrow-"]{
-    color: white;
-}
-
-.div-btn-next-or-back > button:hover > [class*="fa-arrow-"]{
-    color: black;
-}
-
-
 
 
 
@@ -137,12 +193,37 @@ main {
 
 /* Button Nav */
 .my-btn-nav{
+    font-size: 1.2rem;
     border-radius: 1.25rem;
-    /* color: #f8f9fa; */
-    background-color: #000000;
-    /* border-color: #f8f9fa; */
+    background-color: transparent;
 }
 
+
+
+
+/* BUTTON GENERAL PROPERTY */
+/* button:hover{
+
+
+} */
+
+/* img:hover{
+    transition: scale 2;
+} */
+
+/* .grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); } */
+
+.btn{
+    color: #ggg;
+
+    transition: all .2s ease-in-out; }
+.btn:hover{
+    transform: scale(1.2);
+    color: white;
+    background-color: transparent;
+
+}
 
 
 /*   UTILITY  */
