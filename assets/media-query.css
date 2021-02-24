@@ -1,4 +1,4 @@
-@media all and (max-width: 400px) {
+@media all and (max-width: 470px) {
     .div-btn-next-or-back{
         display: none;
     }
@@ -9,12 +9,12 @@
 
 }
 
-@media (min-width: 576px){}
+@media (min-width: 576px){
     .card-group {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-flow: row;
-
+    }
 }
 
 

@@ -207,7 +207,7 @@ footer #Song-in-progress .card{
     border: 1px solid rgba(0,0,0,.125);
     display: flex;
     flex-direction: row;
-    margin: 25px;
+    margin: 30px;
     color: white;
 }
 
@@ -218,6 +218,21 @@ footer #Song-in-progress .card > * {
 footer #Song-in-progress .card img{
     height: 50px;
     width: 50px;
+}
+
+.fa-heart,.fa-folder{
+    color: white;
+    margin: auto 0;
+}
+
+.fa-heart:hover{
+    color: red;
+}
+
+.fa:hover{
+
+    transform: scale(1.5);
+    margin: auto 0;
 }
 
 
