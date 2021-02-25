@@ -119,14 +119,6 @@ DI SIDEBAR.
     justify-content: flex-start;
 }
 
-[class*="fa-arrow-"]{
-    color: white;
-}
-
-.div-btn-next-or-back > button:hover > [class*="fa-arrow-"]{
-    color: black;
-}
-
 
 /* -------- SECTION ALBUM ----------- */
 
@@ -229,12 +221,12 @@ main > [id^="Row-"] .card  > img{
 
 /* Dimensione */
 footer > #Controller-Track{
-    width: 50vw;
+    width: 55vw;
 }
 
 footer > div:first-child,
 footer > div:last-child{
-    width: calc(50vw / 2);
+    width: calc(45vw / 2);
 }
 /* ------------------------ */
 
@@ -320,8 +312,8 @@ footer #Song-in-progress .card img{
   -webkit-appearance: none; /* Override default look */
   appearance: none;
   /* transform: scale(1.2); */
-  width: 18px; /* Set a specific slider handle width */
-  height: 18px; /* Slider handle height */
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
   border-radius: 50%;
   border: 2px solid #000000;
   background: #4CAF50; /* Green
@@ -336,12 +328,6 @@ footer #Song-in-progress .card img{
   cursor: pointer; /* Cursor on hover */
 }
 
-
-
-
-
-
-
 .slidecontainer > div > p{
     flex: 0 1 10%;
     margin-bottom: 0px;
@@ -353,7 +339,7 @@ footer #Song-in-progress .card img{
 
 
 /* Next play e company */
-.my-btn:hover{
+/* .my-btn:hover{
     transform: scale(1.2);
     background-color: transparent;
 
@@ -362,7 +348,7 @@ footer #Song-in-progress .card img{
 .my-btn:active{
 
 
-}
+} */
 
 
 
@@ -439,28 +425,35 @@ footer #Song-in-progress .card img{
 
 /* ********** BUTTON PROPERTY ********* */
 /* Button Nav */
-.my-btn-nav{
+.btn.my-btn-nav{
     font-size: 1.3rem;
     border-radius: 1.25rem;
+    border: 1px groove #ffffff;
     background-color: transparent;
+    padding: 0.285rem 2.3rem;
 }
 
 .my-btn-nav:hover{
-    transform:  scale(2);
-    background: linear-gradient(0deg, #282828 0%, #000000 110%);
+    transform:  scale(1.5);
+    transform:  scale(1.2);
+    background-color: black;
+}
+
+
+
+
+#sidebar button:hover{
+    transform:  scale(1.2);
+    background-color: black;
 }
 
 .btn{
-    color: #ggg;
-    transition: all .2s ease-in-out;
+    margin: 5px;
+    padding: 0.285rem 0.30rem;
 }
 
-.btn:hover{
-    transform: scale(1.2);
-    color: white;
-    background-color: transparent;
 
-}
+
 
 /* other */
 .m-top-70px{

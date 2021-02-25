@@ -1,4 +1,28 @@
+@media all and (max-width: 450px) {
+    section > .col-12 > {
+        text-align: center;
+    }
+
+}
+
+@media all and (max-width: 470px) {
+    section > .col-12 h2{
+        display: inline-block!important;
+    }
+    /* section > .col-12 h2{
+        text-align: center;
+    } */
+}
+
+
+
+
 @media all and (max-width: 570px) {
+
+    .navbar {
+        justify-content: center;
+    }
+
     .div-btn-next-or-back{
         display: none;
     }
@@ -7,26 +31,14 @@
         justify-content: center;
     }
 
-
-    footer #Song-in-progress .card{
-        /* border: none; */
+    .hidden-570px{
+        display: none;
     }
 
-    .card{
-        border: none;
-    }
+
 
 }
 
-@media (min-width: 576px){
-
-
-    .card-group {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-flow: row;
-    }
-}
 
 
 @media all and (max-width: 768px) {
@@ -73,14 +85,13 @@
         justify-content: center;
     	-webkit-justify-content: center;
     }
+    .Name-track-artist{
+        display: none!important;
+    }
 
     #Heart_Directory-Icons{
         display: none!important;
     }
-
-
-
-
 }
 
 
@@ -100,8 +111,6 @@
     #Container-Logo-Down-768px{
         display: none!important;
     }
-
-
 
     #Nav-menu{
         height: 20vh;
@@ -125,20 +134,22 @@
 
 }
 
-@media all and (max-width: 900px){
-
-    .Add-To-Favourites{
+@media all and (max-width: 950px){
+    #Heart_Directory-Icons{
         display: none!important;
     }
-
 }
 
 
 @media all and (min-width: 1098px) {
-
-
     body main > [id^="Row-"] > .col-12 > *{
         text-align: left;
     }
+}
 
+@media all and (min-width: 1200px) {
+
+    .hidden-1150px{
+        display: inline-block!important;
+    }
 }
