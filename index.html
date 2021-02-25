@@ -17,13 +17,17 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Suez+One&display=swap" rel="stylesheet">
+
     <title><s>Spotify Home</s></title>
     </head>
 
     <body class="d-flex">
 
-        <sidebar id="sidebar" class="container-fluid bg-black animate__animated animate__flip">
-                <section id="Nav-menu" class="row d-flex">
+        <sidebar id="sidebar" class="d-flex flex-column align-content-start bg-black animate__animated animate__fadeInLeft animate__slow">
+                <section id="Nav-menu" class="d-flex">
 
                     <ul class="nav flex-column">
                         <!-- LOGO LARGE DEVICE -->
@@ -50,8 +54,44 @@
 
                 </section>
 
-                <section id="Nav-Playlist" class="row d-flex">
-                    <ul class="nav flex-column justify-content-end">
+
+
+                <section id="Nav-Playlist" class="d-flex flex-nowrap  text-white">
+                    <ul class="nav flex-column flex-nowrap">
+                        <li class="mb-3 mt-3">
+                            <h4 class="">Playlist</h4>
+                        </li>
+
+
+                        <li>
+                            <small>Nome Playlist</small>
+                        </li>
+
+                        <li>
+                            <small>Nome Playlist</small>
+                        </li>
+
+                        <li>
+                            <small>Nome Playlist</small>
+                        </li>
+
+                        <li>
+                            <small>Nome Playlist</small>
+                        </li>
+
+                        <li>
+                            <small>Nome Playlist</small>
+                        </li>
+
+                        <li>
+                            <small>Nome Playlist</small>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <section id="Nav-Account-Downl" class="d-flex">
+                    <ul class="nav flex-column align-content-end">
                         <li class="d-flex">
                             <!-- ICON DOWNLOADS -->
                             <button type="button" class="btn btn-outline-light"><img class="Icon-Border-Circle" src="assets\icon\downloads.svg" alt=""></button>
@@ -64,13 +104,13 @@
                 </section>
         </sidebar>
 
-        <main class="container-fluid scroll">
+        <main class="scroll">
 
             <!-- TODO: Risolvere container fix -->
             <div id="Container_NavMain-Fx-Top" class="container-fluid sticky-top">
-                <div id="NavMain-Fx-Top" class="row animate__animated animate__fadeIn"> <!--NavMain-Fx-Top IMPORTANT!-->
+                <div id="NavMain-Fx-Top" class="row animate__animated animate__fadeIn animate__slow"> <!--NavMain-Fx-Top IMPORTANT!-->
                     <section id="Upgrade-Btn-Nav" class="col-12 p-0">
-                        <nav class="navbar navbar-expand-lg navbar-light d-flex">
+                        <nav class="navbar navbar-light my-navbar d-flex">
                             <div class="div-btn-next-or-back mr-auto animate__animated animate__fadeInLeft">
                                 <button type="button" class="btn  p-0 ml-4 mr-3"><i class="fa fa-arrow-circle-left fa-2x"></i></button>
                                 <button type="button" class="btn text-light p-0"><i class="fa fa-arrow-circle-right fa-2x"></i></button>
@@ -78,7 +118,7 @@
 
 
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-outline-light my-btn-nav br-rx-10px animate__animated animate__fadeInRight" data-toggle="modal" data-target="#staticBackdrop">
+                            <button type="button" class="btn btn-dark border-white my-btn-nav br-rx-10px animate__animated animate__fadeInRight" data-toggle="modal" data-target="#staticBackdrop">
                               Effettua l'upgrade
                             </button>
                         </nav>
@@ -87,116 +127,117 @@
             </div>
 
             <!-- Primo Genere -->
-            <section id="Row-First-Type-Music" class="animate__animated animate__bounceIn">
+            <section id="Row-First-Type-Music" class="animate__animated animate__zoomIn animate__slow">
                 <div class="col-12">
-                    <h2 class="text-light">Recently played</h2>
+                    <h2 class="text-light mt-3">Recently played</h2>
+                    <hr class="border-light">
                 </div>
 
-                <div class="card-group">
-                  <div class="card">
+                <div class="card-group d-flex justify-content-center">
+                  <div class="card animate__animated animate__zoomIn animate__slow">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
                       <p class="card-text"><small>Mahomood</small></p>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card animate__animated animate__zoomIn animate__slow">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
                       <p class="card-text"><small>Mahomood</small></p>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card animate__animated animate__zoomIn animate__slow">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
                       <p class="card-text"><small>Mahomood</small></p>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card animate__animated animate__zoomIn animate__slow">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
                       <p class="card-text"><small>Mahomood</small></p>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card animate__animated animate__zoomIn animate__slow">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
                       <p class="card-text"><small>Mahomood</small></p>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card animate__animated animate__zoomIn animate__slow">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
                       <p class="card-text"><small>Mahomood</small></p>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card animate__animated animate__zoomIn animate__slow">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
                       <p class="card-text"><small>Mahomood</small></p>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card animate__animated animate__zoomIn animate__slow">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
                       <p class="card-text"><small>Mahomood</small></p>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card animate__animated animate__zoomIn animate__slow">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
                       <p class="card-text"><small>Mahomood</small></p>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card animate__animated animate__zoomIn animate__slow">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
                       <p class="card-text"><small>Mahomood</small></p>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card animate__animated animate__zoomIn animate__slow">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -208,17 +249,18 @@
 
 
             <!-- SECONDO  GENERE -->
-            <section id="Row-Second-Type-Music" class="animate__animated animate__bounceIn">
+            <section id="Row-Second-Type-Music" class="animate__animated animate__bounceIn animate__slow">
                 <div class="col-12">
-                    <h2 class="text-light">Creato per Jhon Doe</h2>
+                    <h2 class="text-light mt-3">Creato per Jhon Doe</h2>
                     <p class="text-secondary"> <small>Più ascolti più saranno accurati gli aggiornamenti</small></p>
+                    <hr class="border-light">
                 </div>
 
-                <div class="card-group">
+                <div class="card-group d-flex justify-content-center">
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -227,8 +269,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -237,8 +279,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -247,8 +289,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -257,8 +299,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -267,8 +309,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -277,8 +319,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -287,8 +329,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -297,8 +339,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -307,8 +349,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -317,8 +359,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -333,15 +375,16 @@
             <!-- Terzo Genere -->
             <section id="Row-Second-Type-Music" class="animate__animated animate__bounceIn">
                 <div class="col-12">
-                        <h2 class="text-light">Artisti più popolari</h2>
+                        <h2 class="text-light mt-3">Artisti più popolari</h2>
                         <p class="text-secondary"> <small>Più ascolti più saranno accurati gli aggiornamenti</small></p>
+                        <hr class="border-light">
                 </div>
 
-                <div class="card-group">
+                <div class="card-group d-flex justify-content-center">
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -350,8 +393,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -360,8 +403,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -370,8 +413,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -380,8 +423,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -390,8 +433,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -400,8 +443,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -410,8 +453,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -420,8 +463,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -430,8 +473,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -440,8 +483,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button">
-                        <img src="assets\icon\play-player.svg" alt="">
+                    <button type="button my-btn">
+                        <i class="fa fa-play-circle fa-3x"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -452,43 +495,80 @@
             </section>
         </main>
 
-        <footer class="d-flex">
-                <div id="Song-in-progress" class=" d-flex flex-wrap">
+        <footer class="d-flex rounded-left rounded-right animate__animated animate__zoomInUp animate__slow">
+                <div id="Song-in-progress" class=" d-flex flex-wrap justify-content-around">
                     <div class="card">
                       <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                      <div class="Add-To-Favourites d-flex flex-wrap flex-column">
-                          <p class="card-title mb-0">Inuyasha</p>
+                      <div class="Add-To-Favourites pl-3">
+                          <!-- <H6 class="card-title mb-0"></H6> -->
+                          <p class="mb-1"><u>Inuyasha</u></p>
                           <p class="card-text"><small>Mahomood</small></p>
                       </div>
                     </div>
-                    <div id="" class="d-flex flex-column justify-content-center">
-                        <span class="d-flex align-content-center pr-3 mb-2"><i class="fa fa-heart"></i></span>
-                        <span class="d-flex align-content-center"><i class="fa fa-folder"></i></span>
+                    <div id="Heart_Directory-Icons" class="d-flex flex-column justify-content-center ml-3">
+                        <span class="my-Nav-button d-flex align-content-center  mb-2 mt-1 my-btn:hover"><i class="fa fa-heart"></i></span>
+                        <span class="d-flex align-content-center mt-2"><i class="fa fa-folder"></i></span>
                     </div>
-
-
-
-
-
                 </div>
 
 
 
 
-                <div id="Controller-Track" class="d-flex">
-                    <div class="slidecontainer d-flex flex-column justify-content-around">
-                        <div class="d-flex  justify-content-around">
+                <div id="Controller-Track" class="d-flex flex-wrap justify-content-around">
+                    <div class="slidecontainer d-flex flex-column justify-content-end">
+                        <div class="d-flex  justify-content-around mt-3">
+                            <div class="d-flex flex-wrap align-content-center">
+                                <span type="button" class="my-btn mr-5 mt-1">
+                                    <i class="fa fa-random"></i>
 
+                                </span>
+                                <span type="button" class="my-btn mr-5 mt-1">
+                                    <i class="fa fa-backward"></i>
+                                </span>
+                                <span type="button" class="my-btn text-center">
+                                    <i class="fa fa-play-circle fa-2x"></i>
+                                </span>
+                                <span type="button" class="my-btn ml-5 mt-1">
+                                    <i class="fa fa-forward"></i>
+                                </span>
+                                <span type="button" class="my-btn ml-5 mt-1">
+                                    <i class="fa fa-undo"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row d-flex mb-3">
                             <p class="text-light text-right pr-3"><small>0:29</small></p>
                             <span class=""><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></span>
-                            <p class="text-light pl-3"><small>0:29</small></p>
-
+                            <p class="text-light pl-3"><small>4:26</small></p>
                         </div>
-
                     </div>
                 </div>
-                <div id="Controller-Volume" class="">
+                <div id="Controller-Volume" class="d-flex flex-wrap justify-content-end">
 
+                        <div class="d-flex  justify-content-end mt-3">
+                            <div class="d-flex flex-wrap align-content-center">
+                                <span type="button" class="my-btn mt-1">
+                                    <i class="fa fa-list"></i>
+
+                                </span>
+                                <span type="button" class="my-btn ml-4 mt-1">
+                                    <i class="fa fa-desktop"></i>
+                                </span>
+                                <div class="d-flex ml-4 mt-1">
+                                    <span type="button" class="my-btn pr-2 mt-1">
+                                        <i class="fa fa-volume-up"></i>
+                                    </span>
+                                    <span type="button" class="mr-3">
+                                        <input role="Volume"type="range" min="1" max="100" value="50" class="slider" id="myRange"></i>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- <div class="row d-flex mb-3">
+                            <span class=""><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></span>
+                        </div> -->
+                    </div>
                 </div>
         </footer>
 

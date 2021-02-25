@@ -1,35 +1,44 @@
 body{
     overflow: hidden;
+    background-color: black;
+    font-family: 'Suez One', serif;
 }
 
 main,#sidebar{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
     width: 100%;
 }
 
 main{
-    /* margin-bottom: calc(100vh - 70px); */
     /* Background */
     background-color: #000000;
     background-image: linear-gradient(0deg, #000000 0%, #414141 150%);
+    padding-left: 0;
+    padding-right: 0;
 }
 
 footer{
-    background-color: #242424;
+    background-image: linear-gradient(0deg, #282828 0%, #000000 110%);
+    /* background-color: #000000; */
     position: fixed;
     z-index: 5;
     bottom: 0;
     left: 0;
-    height: 100px;
+    height: 90px;
     width: 100%;
+    border-top: 1px dotted white;
+    /* box-shadow: 2px black; */
 }
 
+/* .border-solid-black{
+
+} */
 
 
 /* ********** BOX SIDEBAR AND MAIN ***********/
 #sidebar {
   width: 50px;
-  border-right: thin solid rgba(255,255 ,255,0.5);
+  border-right: thin dotted white;
   /* flex-basis: 50px; */
 }
 
@@ -42,27 +51,44 @@ main {
 
 /* *************  SIDEBAR ***************/
 /* Button Sidebar */
+
+#Nav-menu{
+    border-bottom: 1px solid #FFFFFF;
+}
+
+
+#Nav-Playlist{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+#Nav-Account-Downl{
+    margin-top:auto;
+    margin-bottom: 10px;
+}
+
+
 #sidebar button{
     border: none;
 }
 
 
-/* ALTEZZA SECTION -- NAV-MENU / NAV-PLAYLIST --
+/* ALTEZZA SECTION -- NAV-MENU / Nav-Account-Downl --
 DI SIDEBAR.
   */
 #Nav-menu{
-    height: 30vh;
+    /* height: 30vh; */
     padding: 0 15px;
     min-height: 250px;
-    border-bottom: 1px solid #ffffff;
+
 }
 
-#Nav-Playlist {
-    height: calc(70vh - 120px);
+/* #Nav-Account-Downl {
     min-height: 100px;
-}
+} */
 
-#Nav-menu, #Nav-Playlist{
+#Nav-Playlist, #Nav-Account-Downl{
     padding: 0 15px;
 }
 
@@ -78,8 +104,14 @@ DI SIDEBAR.
 
 /*------- Nav-Main-Fx-Top -------- */
 
+#Container_NavMain-Fx-Top{
+    border-bottom: 1px dotted white;
+    background-color: #000000;
+}
+
 .navbar {
-    padding: 1.5rem 2rem;
+    padding: 0.5rem 2rem;
+    background-color: #000000;
 }
 
 /* BUTTON NEXT-BACK */
@@ -100,27 +132,29 @@ DI SIDEBAR.
 
 main > [id^="Row-"] > .col-12 > *{
     text-align: center;
-    padding-bottom: 10px;
 }
 
 
 /* §********** MAIN SECTION THUMNAILS **************/
 
+.card{
+    border: none;
+}
+
 main > [id^="Row-"] .card-group > .card{
     background-color: transparent;
-    border: 1px solid rgba(0,0,0,.125);
     display: flex;
 	display: -webkit-flex;
 	flex-direction: column wrap;
 	-webkit-flex-direction: column wrap;
     align-items: stretch;
-    margin-bottom: 20px;
     padding: 20px;
     flex: 0 0 250px;
-    padding: 10px 20px;
     justify-content: center;
     color: white;
 }
+
+
 
 main > [id^="Row-"] .card-group > .card > *{
     text-align: center;
@@ -137,17 +171,9 @@ main > [id^="Row-"] .card-group{
     /* TODO: Cambiare per lo scrolling orizzontale */
         flex-flow: row wrap;
         -webkit-flex-flow: row wrap;
-        /* overflow-x: auto;
-        overflow-y: hidden; */
+        overflow-x: auto;
+        overflow-y: hidden;
     /* -----------------------------------------  */
-
-    /*  TODO: Tienilo in considerazione per lo scrool verticale
-    togliendo il margin alle card (space-between)
-    ----------------------------------------
-    justify-content: space-between;
-	-webkit-justify-content: space-between;
-    ----------------------------------------
-    */
 }
 /* ---------------------------------------------- */
 
@@ -161,7 +187,7 @@ main > [id^="Row-"] .card{
 }
 
 main > [id^="Row-"] .card  > button{
-    background-color: rgba(60, 60, 60,0.3);
+    background-color: rgba(0, 0, 0,0.7);
     border-radius: 12px;
     position: absolute;
     left: 0;
@@ -183,13 +209,14 @@ main > [id^="Row-"] .card:hover > button{
 
 
 main > [id^="Row-"] .card button:hover {
-    transform: scale(1.1);
-    border:  black;
+    transform: scale(1);
+    background-color: linear-gradient(0deg, #282828 0%, #000000 110%);
 }
 
-main > [id^="Row-"] .card button > img{
-    width: 80px;
-    height: 90px;
+main > [id^="Row-"] .card  > img{
+    max-width: 100%;
+    min-width: 80%;
+
 }
 /* ------------------------------------- */
 
@@ -198,31 +225,41 @@ main > [id^="Row-"] .card button > img{
 
 /* ******* FOOTER *************/
 
-footer > div{
-    width: calc(100vw / 3);
+/* IMPORTANT! FOOTER 3 D-FLEX */
+
+/* Dimensione */
+footer > #Controller-Track{
+    width: 50vw;
 }
+
+footer > div:first-child,
+footer > div:last-child{
+    width: calc(50vw / 2);
+}
+/* ------------------------ */
+
+
+
 
 footer #Song-in-progress .card{
     background-color: transparent;
-    border: 1px solid rgba(0,0,0,.125);
     display: flex;
     flex-direction: row;
-    margin: 30px;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 30px; */
     color: white;
 }
 
-footer #Song-in-progress .card > * {
-    margin: 0 8px;
-}
 
 footer #Song-in-progress .card img{
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
+    border-radius: 5px;
 }
 
-.fa-heart,.fa-folder{
+.fa{
     color: white;
-    margin: auto 0;
 }
 
 .fa-heart:hover{
@@ -230,11 +267,26 @@ footer #Song-in-progress .card img{
 }
 
 .fa:hover{
-
     transform: scale(1.5);
     margin: auto 0;
 }
 
+/* fa-volume inline input */
+/* input[role="Volume"]::before{
+    content: \f028;
+    font-size: 20px;
+    color: white;
+} */
+
+
+
+
+
+
+
+/* .fa-backward, .fa-forward, {
+    transform: scale(1.1);
+} */
 
 
 
@@ -267,10 +319,13 @@ footer #Song-in-progress .card img{
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 10px; /* Set a specific slider handle width */
-  height: 10px; /* Slider handle height */
+  /* transform: scale(1.2); */
+  width: 18px; /* Set a specific slider handle width */
+  height: 18px; /* Slider handle height */
   border-radius: 50%;
-  background: #4CAF50; /* Green background */
+  border: 2px solid #000000;
+  background: #4CAF50; /* Green
+   background */
   cursor: pointer; /* Cursor on hover */
 }
 
@@ -284,14 +339,30 @@ footer #Song-in-progress .card img{
 
 
 
+
+
+
 .slidecontainer > div > p{
     flex: 0 1 10%;
+    margin-bottom: 0px;
 }
 
 .slidecontainer> div > span{
     flex: 2 1 40%;
 }
 
+
+/* Next play e company */
+.my-btn:hover{
+    transform: scale(1.2);
+    background-color: transparent;
+
+}
+
+.my-btn:active{
+
+
+}
 
 
 
@@ -360,7 +431,7 @@ footer #Song-in-progress .card img{
 
 /* text-color */
 .text-black{
-    color: black;
+    color: #000000;
 }
 
 
@@ -369,15 +440,21 @@ footer #Song-in-progress .card img{
 /* ********** BUTTON PROPERTY ********* */
 /* Button Nav */
 .my-btn-nav{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border-radius: 1.25rem;
     background-color: transparent;
 }
 
+.my-btn-nav:hover{
+    transform:  scale(2);
+    background: linear-gradient(0deg, #282828 0%, #000000 110%);
+}
+
 .btn{
     color: #ggg;
+    transition: all .2s ease-in-out;
+}
 
-    transition: all .2s ease-in-out; }
 .btn:hover{
     transform: scale(1.2);
     color: white;

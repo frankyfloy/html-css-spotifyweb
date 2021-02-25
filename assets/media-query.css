@@ -7,12 +7,9 @@
         justify-content: center;
     }
 
-    .Add-To-Favourites{
-        visibility: hidden;
-    }
 
     footer #Song-in-progress .card{
-        border: none;
+        /* border: none; */
     }
 
     .card{
@@ -39,7 +36,16 @@
       max-width: 50px;
     }
 
-    #Nav-menu,#Nav-Playlist{
+    #Nav-Playlist{
+        display: none!important;
+    }
+
+
+    #Nav-Account-Downl {
+        padding: 0;
+    }
+
+    #Nav-menu,#Nav-Account-Downl{
         justify-content: center;
     }
 
@@ -68,7 +74,10 @@
     	-webkit-justify-content: center;
     }
 
-    [class=^"Row-"]
+    #Heart_Directory-Icons{
+        display: none!important;
+    }
+
 
 
 
@@ -80,9 +89,9 @@
 @media all and (min-width: 768px) {
     body #sidebar {
       resize: horizontal;
-      width: 250px;
+      width: 143px;
       min-width: 80px;
-      max-width: 400px;
+      max-width: 600px;
       overflow-x: hidden;
       overflow-y: hidden;
     }
@@ -91,6 +100,8 @@
     #Container-Logo-Down-768px{
         display: none!important;
     }
+
+
 
     #Nav-menu{
         height: 20vh;
@@ -107,22 +118,27 @@
         width: 25px;
     }
 
-    .card-group{
-        /* /* TODO: flex-start (default su desktop) */
-        padding-left: 20PX;
-        margin-left: 30px;
+    main > [id=^"Row-"] > .col-12, .card-group{
         justify-content: flex-start;
-
     }
 
-    main > [id=^"Row-"] > .col-12{
-        justify-content: flex-start;
-        margin-left: 20px;
+
+}
+
+@media all and (max-width: 900px){
+
+    .Add-To-Favourites{
+        display: none!important;
     }
+
+}
+
+
+@media all and (min-width: 1098px) {
+
 
     body main > [id^="Row-"] > .col-12 > *{
         text-align: left;
-        margin-left: 50px;
-
     }
+
 }
