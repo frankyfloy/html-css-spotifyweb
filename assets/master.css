@@ -1,7 +1,8 @@
 body{
     overflow: hidden;
     background-color: black;
-    font-family: 'Suez One', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Staatliches', cursive;
 }
 
 main,#sidebar{
@@ -26,7 +27,7 @@ footer{
     left: 0;
     height: 90px;
     width: 100%;
-    border-top: 1px dotted white;
+    border-top: 1px groove white;
     /* box-shadow: 2px black; */
 }
 
@@ -38,8 +39,7 @@ footer{
 /* ********** BOX SIDEBAR AND MAIN ***********/
 #sidebar {
   width: 50px;
-  border-right: thin dotted white;
-  /* flex-basis: 50px; */
+  border-right: thin groove white;
 }
 
 main {
@@ -53,15 +53,40 @@ main {
 /* Button Sidebar */
 
 #Nav-menu{
-    border-bottom: 1px solid #FFFFFF;
-}
 
+    border-bottom: 1px solid #00a000;
+    max-width: 300px;
+    min-height: 270px;
+}
 
 #Nav-Playlist{
+    height: 100%;
+    min-width: 70px;
+    margin-top: 20px;
     overflow-y: auto;
     overflow-x: hidden;
+    border: 1px groove #000000;
 }
 
+#Nav-Account-Downl{
+    border-top: 1px solid #FFFFFF;
+}
+
+
+/* background playlist */
+.Container-Playlist{
+    min-width: 80px;
+    background-image: linear-gradient(0deg, #282828 0%, #000000 110%);
+    /* overflow-y: auto;
+    overflow-x: hidden; */
+    border-radius: 10px;
+}
+
+#List-Album-Create > li{
+    color: #ffffff;
+    padding: 1px 3px;
+    margin-bottom: 5px;
+}
 
 #Nav-Account-Downl{
     margin-top:auto;
@@ -74,21 +99,7 @@ main {
 }
 
 
-/* ALTEZZA SECTION -- NAV-MENU / Nav-Account-Downl --
-DI SIDEBAR.
-  */
-#Nav-menu{
-    /* height: 30vh; */
-    padding: 0 15px;
-    min-height: 250px;
-
-}
-
-/* #Nav-Account-Downl {
-    min-height: 100px;
-} */
-
-#Nav-Playlist, #Nav-Account-Downl{
+#Nav-Playlist, #Nav-Account-Downl,#Nav-menu{
     padding: 0 15px;
 }
 
@@ -105,7 +116,7 @@ DI SIDEBAR.
 /*------- Nav-Main-Fx-Top -------- */
 
 #Container_NavMain-Fx-Top{
-    border-bottom: 1px dotted white;
+    border-bottom: 1px groove white;
     background-color: #000000;
 }
 
@@ -129,11 +140,10 @@ main > [id^="Row-"] > .col-12 > *{
 
 /* §********** MAIN SECTION THUMNAILS **************/
 
-.card{
-    border: none;
-}
+
 
 main > [id^="Row-"] .card-group > .card{
+    border: none;
     background-color: transparent;
     display: flex;
 	display: -webkit-flex;
@@ -208,7 +218,6 @@ main > [id^="Row-"] .card button:hover {
 main > [id^="Row-"] .card  > img{
     max-width: 100%;
     min-width: 80%;
-
 }
 /* ------------------------------------- */
 
@@ -250,8 +259,14 @@ footer #Song-in-progress .card img{
     border-radius: 5px;
 }
 
+
+/* Cascade color fa-icon */
 .fa{
     color: white;
+}
+
+.fa-play-circle,.fa-volume-up{
+    color: #00a000;
 }
 
 .fa-heart:hover{
@@ -262,25 +277,6 @@ footer #Song-in-progress .card img{
     transform: scale(1.5);
     margin: auto 0;
 }
-
-/* fa-volume inline input */
-/* input[role="Volume"]::before{
-    content: \f028;
-    font-size: 20px;
-    color: white;
-} */
-
-
-
-
-
-
-
-/* .fa-backward, .fa-forward, {
-    transform: scale(1.1);
-} */
-
-
 
 
 /* Range time song */
@@ -338,19 +334,6 @@ footer #Song-in-progress .card img{
 }
 
 
-/* Next play e company */
-/* .my-btn:hover{
-    transform: scale(1.2);
-    background-color: transparent;
-
-}
-
-.my-btn:active{
-
-
-} */
-
-
 
 
 
@@ -376,6 +359,8 @@ footer #Song-in-progress .card img{
     box-shadow: 3  3px rgba(0,0,0,.5);
 } */
 /* ------------------------------------------------------------ */
+
+
 
 
 /* ---------------Scroll Vertical Main (Classe Scroll)------------------------- */
@@ -424,21 +409,16 @@ footer #Song-in-progress .card img{
 
 
 /* ********** BUTTON PROPERTY ********* */
+
 /* Button Nav */
 .btn.my-btn-nav{
-    font-size: 1.3rem;
+    color: #00a000;
+    font-size: 1.4rem;
     border-radius: 1.25rem;
-    border: 1px groove #ffffff;
+    border: 1px solid #00a000;
     background-color: transparent;
     padding: 0.285rem 2.3rem;
 }
-
-.my-btn-nav:hover{
-    transform:  scale(1.5);
-    transform:  scale(1.2);
-    background-color: black;
-}
-
 
 
 
@@ -467,4 +447,13 @@ footer #Song-in-progress .card img{
 
 .p-left-8px{
     padding-left: 8px;
+}
+
+.diveder-green{
+    border: 1px groove #00a000;
+}
+
+
+.text-green{
+    color: #00a000;
 }

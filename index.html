@@ -19,7 +19,7 @@
 
     <!-- Font Family -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Suez+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Staatliches&display=swap" rel="stylesheet">
 
     <title><s>Spotify Home</s></title>
     </head>
@@ -40,7 +40,7 @@
                         </li>
                         <!-- LOGO HOME -->
                         <li class="d-flex">
-                            <button type="button" class="btn btn-outline-light "><img class="w-20px" src="assets/icon/icons-home.svg" alt=""></button>
+                            <button type="button" class="d-inline btn btn-outline-light "><img class="w-20px" src="assets/icon/icons-home.svg" alt=""></button>
                         </li>
                         <!-- LOGO LENTE -->
                         <li class="d-flex">
@@ -56,37 +56,43 @@
 
 
 
-                <section id="Nav-Playlist" class="d-flex flex-nowrap  text-white">
-                    <ul class="nav flex-column flex-nowrap">
-                        <li class="mb-3 mt-3">
-                            <h4 class="">Playlist</h4>
-                        </li>
+                <section id="Nav-Playlist" class="d-flex flex-column text-white">
+
+                    <div class="Header-Playlist
+                    ">
+                        <h5 class="text-green"><ins>Playlist<ins></h5>
+                    </div>
+
+                    <div class="Container-Playlist d-flex">
+                        <ul id="List-Album-Create" class="nav flex-column">
+
+                            <li>
+                                <small>Nome Playlist</small>
+                            </li>
+
+                            <li>
+                                <small>Nome Playlist</small>
+                            </li>
+
+                            <li>
+                                <small>Nome Playlist</small>
+                            </li>
+
+                            <li>
+                                <small>Nome Playlist</small>
+                            </li>
+
+                            <li>
+                                <small>Nome Playlist</small>
+                            </li>
+
+                            <li>
+                                <small>Nome Playlist</small>
+                            </li>
+                        </ul>
+                    </div>
 
 
-                        <li>
-                            <small>Nome Playlist</small>
-                        </li>
-
-                        <li>
-                            <small>Nome Playlist</small>
-                        </li>
-
-                        <li>
-                            <small>Nome Playlist</small>
-                        </li>
-
-                        <li>
-                            <small>Nome Playlist</small>
-                        </li>
-
-                        <li>
-                            <small>Nome Playlist</small>
-                        </li>
-
-                        <li>
-                            <small>Nome Playlist</small>
-                        </li>
-                    </ul>
 
                 </section>
 
@@ -119,7 +125,7 @@
 
 
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-dark border-white my-btn-nav br-rx-10px animate__animated animate__fadeInRight" data-toggle="modal" data-target="#staticBackdrop">
+                            <button type="button" class="btn  my-btn-nav br-rx-10px animate__animated animate__fadeInRight" data-toggle="modal" data-target="#staticBackdrop">
                               UPGRADE
                             </button>
                         </nav>
@@ -131,7 +137,7 @@
             <section id="Row-First-Type-Music" class="animate__animated animate__zoomIn animate__slow">
                 <div class="col-12">
                     <h2 class="text-light mt-3">Recently played</h2>
-                    <hr class="border-light">
+                    <hr class="diveder-green">
                 </div>
 
                 <div class="card-group d-flex justify-content-center">
@@ -253,11 +259,11 @@
             <section id="Row-Second-Type-Music" class="animate__animated animate__zoomIn animate__slow">
                 <div class="col-12">
                     <div>
-                        <h2 class="d-inline text-light mt-3">Creato per</h2><h2 class="d-inline name-User text-light border rounded  pl-2">" Jhon Doe "</h2>
+                        <h2 class="d-inline text-light mt-3 mr-1">Creato per</h2><h2 class="d-inline name-User text-light border rounded  ml-1 pl-2 mr-2 pr-2">" Jhon Doe "</h2>
                     </div>
 
                     <p class="text-secondary"> <small>Più ascolti più saranno accurati gli aggiornamenti</small></p>
-                    <hr class="border-light">
+                    <hr class="diveder-green">
                 </div>
 
                 <div class="card-group d-flex justify-content-center">
@@ -381,7 +387,7 @@
                 <div class="col-12">
                         <h2 class="text-light mt-3">Artisti più popolari</h2>
                         <p class="text-secondary"> <small>Più ascolti più saranno accurati gli aggiornamenti</small></p>
-                        <hr class="border-light">
+                        <hr class="diveder-green">
                 </div>
 
                 <div class="card-group d-flex justify-content-center">
@@ -477,8 +483,8 @@
                   </div>
                   <div class="card">
                     <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
-                    <button type="button my-btn">
-                        <i class="fa fa-play-circle fa-3x"></i>
+                    <button type="button" class="my-btn">
+                        <i class="fa fa-play-circle fa-3x border-light"></i>
                     </button>
                     <div class="card-body">
                       <h4 class="card-title">Inuyasha</h4>
@@ -505,7 +511,7 @@
                       <img src="assets\img\IMG-Album-Mahomood.jpg" class="card-img-top" alt="...">
                       <div class="Name-track-artist pl-3">
                           <!-- <H6 class="card-title mb-0"></H6> -->
-                          <p class="mb-1"><u>Inuyasha</u></p>
+                          <p class="text-success mb-1"><u>Inuyasha</u></p>
                           <p class="card-text"><small>Mahomood</small></p>
                       </div>
                     </div>
@@ -532,7 +538,7 @@
                                     </span>
                                 </div>
 
-                                <span type="button" class="my-btn text-center">
+                                <span type="button" id="Play-Button" class="my-btn text-center color-spotify">
                                     <i class="fa fa-play-circle fa-2x"></i>
                                 </span>
 
